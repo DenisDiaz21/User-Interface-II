@@ -1,0 +1,30 @@
+/* Add CSS styling here */
+.firstRow {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+
+}
+.secondRow {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+}
+nav {
+    display: flex;
+}
+h1 {
+    color: blue;
+
+}
+.captions {
+    text-align: center;
+}
+.bio {
+    text-align: center;
+}
+.myProjectsButton {
+    margin: 0 auto;
+}
