@@ -1,10 +1,58 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+
+vertical-align: baseline;  
+}
+
+* {
+    font-family: Raleway;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    background:#f44336;
+}
+
+li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+li a:hover {
+    background-color: black;
+}
+header {
+    background-color: black;
+    height: 10em;
+}
+.headerName {
+    display:flex;
+    justify-content: left;
+}
 .firstRow {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-
-
 }
 .secondRow {
     display: flex;
@@ -12,19 +60,81 @@
     flex-direction: row;
 
 }
-nav {
-    display: flex;
-}
+
 h1 {
-    color: blue;
+    display: inline;
+    text-align: left;
+    color: whitesmoke;
 
 }
+h2 {
+    display: flex;
+    justify-content: center;
+}
+h3 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0em 1em 0em;
+}
+footer {
+    padding-top: 15px;
+    background-color: black;
+    padding-bottom: 30px;
+}
 .captions {
+    margin: 1em 1em 1em 1em;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 .bio {
     text-align: center;
+
+}
+.images {
+    border-style: groove;
+    border-width: 3px;
+}
+.bigImage {
+    border-style: groove;
+    border-color: white;
+    border-width: 5px;
+    border-radius: 2px;
+
+}
+.imageRows {
+    background-color: grey;
+    width: 100%; 
+    overflow: visible;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
 }
 .myProjectsButton {
-    margin: 0 auto;
+   width: 15%;
+}
+.contactMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonStyling {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+}
+.h1 {
+    display: flex;
+    justify-content: left;
+    align-self: center;
+    justify-content: space-evenly;
+
+}
+.introPar {
+    margin: auto;
 }
