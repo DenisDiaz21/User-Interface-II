@@ -23,29 +23,21 @@ vertical-align: baseline;
 * {
     font-family: Raleway;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background:#f44336;
-    margin-top: 5.9em;
-    padding-right:50px;
+
+
+nav {
+    display:flex;
+    flex-direction: row;
 }
-li {
-    float:left;
-  }
-
-
-li a {
+    nav a {
     display: flex;
+    flex-direction: row;
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
-li a:hover {
-    background-color: black;
+nav a:hover {
+    background-color:red;
 }
 header {
     background-color: black;
@@ -53,7 +45,8 @@ header {
 }
 .headerName {
     display:flex;
-    justify-content: left;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 .firstRow {
     display: flex;
@@ -68,7 +61,6 @@ header {
 
 h1 {
     font-size:35px;
-    text-align: left;
     color: whitesmoke;
     margin-top: 5em;
     margin-left: 1em;
@@ -96,10 +88,6 @@ footer {
     justify-content: space-evenly;
     flex-direction: row;
 }
-.images {
-    border-style: groove;
-    border-width: 3px;
-}
 .bigImage {
     border-style: groove;
     border-color: whitesmoke;
@@ -107,22 +95,16 @@ footer {
     border-radius: 3px;
     margin: 100px 0px 100px;
 }
-.bigImageContainer {
 
-        width: 50%;
-}
-.textContainer {
-    width: 50%;
-    text-align: center;
-    align-self: center;
-}
 .textContainer button {
-    margin-top:20px;
+
 }
 .imageRows {
-    background-color: grey;
-    width: 100%; 
-    overflow: visible;
+    background-color:grey;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
 
 
     padding-top: 100px;
@@ -141,9 +123,42 @@ footer {
     color: white;
     padding: 15px 32px;
 }
-.mainContainer {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    width: 50%;
+.topContainer {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
 }
+.topContainer :nth-child(1) {
+    margin: auto auto;
+}
+.topContainer :nth-child(2){
+    margin: auto auto;
+    
+}
+.mainContainer {
+}
+
+.imageRows p {
+    text-align: center;
+    margin-bottom: 1em;
+}
+.topContainer h2 {
+    text-align: center;
+}
+.topContainer p {
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+     nav { 
+     flex-direction: column;
+    }
+
+    nav a {
+        justify-content: center;
+    }
+    .topContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
